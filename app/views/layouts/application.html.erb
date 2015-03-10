@@ -7,9 +7,13 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
-
-<%= flash[:notice] %>
-<%= yield %>
-
-</body>
+  <nav class="navbar navbar-inverse">
+    <div class="navbar-brand">
+      g7 Pairing
+    </div>
+  </nav>
+    <div class = "container">
+      <%= yield %>
+    </div>
+  </body>
 </html>

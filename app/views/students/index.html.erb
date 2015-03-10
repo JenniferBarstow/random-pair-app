@@ -1,9 +1,13 @@
+<h5>
+  <%= form_tag url: root_path do %>
+    <%= select("group", "size", [2,4,7], {})%>
+    <%= submit_tag "Create Group", class: "btn btn-info" %>
+  <% end %>
+</h5>
+
+<hr>
+
 <% @random_groups.each do |random_group| %>
   <%= random_group  %>
   <hr>
-<% end %>
-
-<%= form_tag url: root_path do %>
-  <%= select("group", "size", [2,4,7], {}) %>
-  <%= submit_tag %>
 <% end %>
